@@ -4095,6 +4095,12 @@
 		(uuid "36cb9831-a08b-49c5-b50f-945bd8eb7f1c")
 	)
 	(junction
+		(at 194.31 66.04)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "39be9fcd-6b23-40e9-9d45-79c6dd47e8b3")
+	)
+	(junction
 		(at 222.25 73.66)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4519,6 +4525,16 @@
 			(type default)
 		)
 		(uuid "07fff977-6db6-41c3-952f-206740694e2d")
+	)
+	(wire
+		(pts
+			(xy 194.31 66.04) (xy 199.39 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "087e9e6f-794d-4626-bcea-2113237f517a")
 	)
 	(wire
 		(pts
@@ -5042,6 +5058,16 @@
 	)
 	(wire
 		(pts
+			(xy 194.31 64.77) (xy 194.31 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2a8162b0-fc59-47b6-817d-0c4085167957")
+	)
+	(wire
+		(pts
 			(xy 46.99 45.72) (xy 49.53 45.72)
 		)
 		(stroke
@@ -5179,6 +5205,16 @@
 			(type default)
 		)
 		(uuid "359beaec-c207-4aad-a2c0-a2982cf2a418")
+	)
+	(wire
+		(pts
+			(xy 213.36 59.69) (xy 222.25 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3600b7e8-abaf-4800-88e0-9f49ea043713")
 	)
 	(wire
 		(pts
@@ -6692,16 +6728,6 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 59.69) (xy 222.25 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9f0da6be-6e3d-418e-967d-b0710dfbf561")
-	)
-	(wire
-		(pts
 			(xy 182.88 107.95) (xy 182.88 101.6)
 		)
 		(stroke
@@ -7902,7 +7928,7 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 66.04) (xy 199.39 66.04)
+			(xy 185.42 66.04) (xy 194.31 66.04)
 		)
 		(stroke
 			(width 0)
@@ -8215,6 +8241,16 @@
 		)
 		(uuid "395921dd-c146-4bfb-a27f-1c427cd4edb4")
 	)
+	(text "Shunt: 5mV/A\nAmplifier: 61.6x\nOutput: 0.308V/A"
+		(exclude_from_sim no)
+		(at 136.398 139.954 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "4992349b-ac38-43c7-928c-73381acded09")
+	)
 	(text "Light Set 1 PWM Control"
 		(exclude_from_sim no)
 		(at 68.326 130.81 0)
@@ -8346,6 +8382,16 @@
 		)
 		(uuid "fc9fc096-b679-4479-902a-93b853fd5279")
 	)
+	(text "Rg"
+		(exclude_from_sim no)
+		(at 78.232 153.67 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "fe04692b-e7b7-439a-ba73-47ad43339e27")
+	)
 	(label "ISense2_P"
 		(at 57.15 167.64 0)
 		(fields_autoplaced yes)
@@ -8367,6 +8413,17 @@
 			(justify left bottom)
 		)
 		(uuid "14e2f641-33af-448d-be9a-49c18c83c1e4")
+	)
+	(label "RelayFETGate"
+		(at 205.74 66.04 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "1add72fc-2f9d-466f-b304-bb49fcae145b")
 	)
 	(label "VIN_OPA_PWR"
 		(at 101.6 66.04 0)
@@ -8466,6 +8523,17 @@
 			(justify left bottom)
 		)
 		(uuid "7f9c6df9-c6fe-4d1e-a8d5-fc50c825a13f")
+	)
+	(label "RELAY_COIL_N"
+		(at 198.12 59.69 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8bd1bc54-3e8a-44a7-87c2-8786ce5e4fbb")
 	)
 	(label "ISense2_P"
 		(at 78.74 99.06 0)
@@ -11546,7 +11614,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TerminalBlock_MetzConnect:TerminalBlock_MetzConnect_Type703_RT10N02HGLU_1x02_P9.52mm_Horizontal"
+		(property "Footprint" "Connectors_SurgicalLighting:NC6-P108-02"
 			(at 260.35 110.49 0)
 			(effects
 				(font
@@ -11721,7 +11789,7 @@
 		(fields_autoplaced yes)
 		(uuid "49185c4c-1241-4d12-b2b2-0203c931b712")
 		(property "Reference" "K1"
-			(at 238.76 49.53 0)
+			(at 238.76 48.9585 0)
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -11729,8 +11797,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Relay_SPDT"
-			(at 238.76 52.07 0)
+		(property "Value" "PC792A-1C-C-12S-DN-X"
+			(at 238.76 51.4985 0)
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -15126,7 +15194,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED_Small")
-		(at 228.6 115.57 90)
+		(at 228.6 107.95 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -15134,7 +15202,7 @@
 		(dnp no)
 		(uuid "7c2802ef-44f5-4579-aa75-f3e1b38498d3")
 		(property "Reference" "D8"
-			(at 224.536 114.046 90)
+			(at 224.536 106.426 90)
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -15143,7 +15211,7 @@
 			)
 		)
 		(property "Value" "LED WHITE"
-			(at 219.964 115.57 90)
+			(at 219.964 107.95 90)
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -15152,7 +15220,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
-			(at 228.6 115.57 90)
+			(at 228.6 107.95 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15161,7 +15229,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 228.6 115.57 90)
+			(at 228.6 107.95 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15170,7 +15238,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode, small symbol"
-			(at 228.6 115.57 0)
+			(at 228.6 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16136,7 +16204,7 @@
 		(dnp no)
 		(uuid "92f9b490-0705-45ab-b781-255b1695ab6d")
 		(property "Reference" "R20"
-			(at 83.82 154.432 90)
+			(at 83.82 154.686 90)
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -16144,8 +16212,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10K"
-			(at 80.264 153.67 0)
+		(property "Value" "330R"
+			(at 79.502 153.67 0)
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -17117,7 +17185,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED_Small")
-		(at 114.3 115.57 90)
+		(at 114.3 107.95 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -17125,7 +17193,7 @@
 		(dnp no)
 		(uuid "adea8321-c4fa-433d-a579-4eec7b04ac0e")
 		(property "Reference" "D11"
-			(at 109.728 114.046 90)
+			(at 109.728 106.426 90)
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -17134,7 +17202,7 @@
 			)
 		)
 		(property "Value" "LED WHITE"
-			(at 105.918 115.57 90)
+			(at 105.918 107.95 90)
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -17143,7 +17211,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
-			(at 114.3 115.57 90)
+			(at 114.3 107.95 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17152,7 +17220,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 114.3 115.57 90)
+			(at 114.3 107.95 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17161,7 +17229,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode, small symbol"
-			(at 114.3 115.57 0)
+			(at 114.3 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17571,7 +17639,7 @@
 	)
 	(symbol
 		(lib_id "jlcpcb-basic-resistor:0805,10k")
-		(at 114.3 107.95 0)
+		(at 114.3 115.57 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -17579,7 +17647,7 @@
 		(dnp no)
 		(uuid "b59952f8-3fbf-471f-93b0-4fada3e2a741")
 		(property "Reference" "R35"
-			(at 114.3 109.22 90)
+			(at 114.3 116.84 90)
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -17588,7 +17656,7 @@
 			)
 		)
 		(property "Value" "0805,10k"
-			(at 107.442 107.95 0)
+			(at 107.442 115.57 0)
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -17597,7 +17665,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 114.3 107.95 0)
+			(at 114.3 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17606,7 +17674,7 @@
 			)
 		)
 		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/2110251730_UNI-ROYAL-Uniroyal-Elec-0805W8F1002T5E_C17414.pdf"
-			(at 114.3 107.95 0)
+			(at 114.3 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17615,7 +17683,7 @@
 			)
 		)
 		(property "Description" "1% 1 8W Thick Film Resistors 150V   100ppm    -55    155   10k   0805 Chip Resistor - Surface Mount ROHS"
-			(at 114.3 107.95 0)
+			(at 114.3 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17624,7 +17692,7 @@
 			)
 		)
 		(property "LCSC" "C17414"
-			(at 114.3 107.95 0)
+			(at 114.3 115.57 0)
 			(effects
 				(font
 					(size 0.0254 0.0254)
@@ -17633,7 +17701,7 @@
 			)
 		)
 		(property "MFG" "UNI-ROYAL(Uniroyal Elec)"
-			(at 114.3 107.95 0)
+			(at 114.3 115.57 0)
 			(effects
 				(font
 					(size 0.0254 0.0254)
@@ -17642,7 +17710,7 @@
 			)
 		)
 		(property "MFGPN" "0805W8F1002T5E"
-			(at 114.3 107.95 0)
+			(at 114.3 115.57 0)
 			(effects
 				(font
 					(size 0.0254 0.0254)
@@ -18005,6 +18073,73 @@
 			(project "PowerModule"
 				(path "/352d7abe-fc72-4473-8b68-62eecf44f496"
 					(reference "D4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Small")
+		(at 194.31 64.77 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "be6cb91d-501a-41da-ac88-32fff26129ca")
+		(property "Reference" "TP11"
+			(at 192.278 63.246 0)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint_Small"
+			(at 195.58 66.0399 0)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+			(at 199.39 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 199.39 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 194.31 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f0333abf-ce40-468f-8ab8-5c6a94ce0271")
+		)
+		(instances
+			(project "PowerModule"
+				(path "/352d7abe-fc72-4473-8b68-62eecf44f496"
+					(reference "TP11")
 					(unit 1)
 				)
 			)
@@ -18780,7 +18915,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TerminalBlock_MetzConnect:TerminalBlock_MetzConnect_Type703_RT10N02HGLU_1x02_P9.52mm_Horizontal"
+		(property "Footprint" "Connectors_SurgicalLighting:NC6-P108-02"
 			(at 146.05 110.49 0)
 			(effects
 				(font
@@ -20665,7 +20800,7 @@
 	)
 	(symbol
 		(lib_id "jlcpcb-basic-resistor:0805,10k")
-		(at 228.6 107.95 0)
+		(at 228.6 115.57 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -20673,7 +20808,7 @@
 		(dnp no)
 		(uuid "f73a1f78-6dfc-43aa-9706-c7102040aac3")
 		(property "Reference" "R30"
-			(at 228.6 109.22 90)
+			(at 228.6 116.84 90)
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -20682,7 +20817,7 @@
 			)
 		)
 		(property "Value" "0805,10k"
-			(at 221.742 107.95 0)
+			(at 221.742 115.57 0)
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -20691,7 +20826,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 228.6 107.95 0)
+			(at 228.6 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20700,7 +20835,7 @@
 			)
 		)
 		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/2110251730_UNI-ROYAL-Uniroyal-Elec-0805W8F1002T5E_C17414.pdf"
-			(at 228.6 107.95 0)
+			(at 228.6 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20709,7 +20844,7 @@
 			)
 		)
 		(property "Description" "1% 1 8W Thick Film Resistors 150V   100ppm    -55    155   10k   0805 Chip Resistor - Surface Mount ROHS"
-			(at 228.6 107.95 0)
+			(at 228.6 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20718,7 +20853,7 @@
 			)
 		)
 		(property "LCSC" "C17414"
-			(at 228.6 107.95 0)
+			(at 228.6 115.57 0)
 			(effects
 				(font
 					(size 0.0254 0.0254)
@@ -20727,7 +20862,7 @@
 			)
 		)
 		(property "MFG" "UNI-ROYAL(Uniroyal Elec)"
-			(at 228.6 107.95 0)
+			(at 228.6 115.57 0)
 			(effects
 				(font
 					(size 0.0254 0.0254)
@@ -20736,7 +20871,7 @@
 			)
 		)
 		(property "MFGPN" "0805W8F1002T5E"
-			(at 228.6 107.95 0)
+			(at 228.6 115.57 0)
 			(effects
 				(font
 					(size 0.0254 0.0254)

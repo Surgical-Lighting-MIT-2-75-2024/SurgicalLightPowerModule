@@ -59,7 +59,9 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        "courtyards_overlap|122026957|51050001|defa03da-376f-4020-829d-a38e19fd0914|118f157e-ab73-4041-b32a-926f291f2e4e"
+      ],
       "meta": {
         "version": 2
       },
@@ -454,7 +456,9 @@
     }
   },
   "libraries": {
-    "pinned_footprint_libs": [],
+    "pinned_footprint_libs": [
+      "Connectors_SurgicalLighting"
+    ],
     "pinned_symbol_libs": []
   },
   "meta": {
